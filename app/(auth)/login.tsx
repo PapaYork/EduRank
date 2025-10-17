@@ -22,14 +22,12 @@ const LoginScreen = () => {
 
   const handleSignIn = async () => {
     setLoading(true);
-    // Add your sign-in logic here
+ 
     console.log('Sign in with:', email, password);
     
-    // Simulate API call
     setTimeout(() => {
       setLoading(false);
-      // Navigate to home screen after successful login
-      // router.push('/(tabs)/home');
+
     }, 1500);
   };
 
@@ -51,17 +49,16 @@ const LoginScreen = () => {
           contentContainerStyle={styles.scrollContent}
           showsVerticalScrollIndicator={false}
         >
-          {/* Graduation Cap Icon */}
+
           <View style={styles.iconContainer}>
             <View style={styles.iconWrapper}>
               <Ionicons name="school" size={64} color="#003D82" />
             </View>
           </View>
 
-          {/* Welcome Text */}
+
           <Text style={styles.welcomeText}>Welcome Back!</Text>
 
-          {/* Email Input */}
           <View style={styles.inputContainer}>
             <Text style={styles.label}>Email or Username</Text>
             <TextInput
@@ -76,7 +73,6 @@ const LoginScreen = () => {
             />
           </View>
 
-          {/* Password Input */}
           <View style={styles.inputContainer}>
             <Text style={styles.label}>Password</Text>
             <View style={styles.passwordContainer}>
@@ -102,7 +98,6 @@ const LoginScreen = () => {
             </View>
           </View>
 
-          {/* Forgot Password */}
           <TouchableOpacity
             style={styles.forgotPasswordContainer}
             onPress={handleForgotPassword}
@@ -110,7 +105,6 @@ const LoginScreen = () => {
             <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
           </TouchableOpacity>
 
-          {/* Sign In Button */}
           <TouchableOpacity
             style={[styles.signInButton, loading && styles.signInButtonDisabled]}
             onPress={handleSignIn}
@@ -122,7 +116,6 @@ const LoginScreen = () => {
             </Text>
           </TouchableOpacity>
 
-          {/* Sign Up Link */}
           <View style={styles.signUpContainer}>
             <Text style={styles.signUpText}>Don't have an account? </Text>
             <TouchableOpacity onPress={handleSignUp}>
@@ -236,7 +229,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '600',
   },
-  
+
   signUpContainer: {
     flexDirection: 'row',
     justifyContent: 'center',

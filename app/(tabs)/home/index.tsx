@@ -1,9 +1,8 @@
 import { Text, StyleSheet, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
-import { globalStyle } from '../../../constants/styles'
 
-const Page = () => {
+const HomeScreen  = () => {
   return (
      <SafeAreaProvider>
         <SafeAreaView>
@@ -13,5 +12,5 @@ const Page = () => {
   )
 }
 
-export default Page
+export default HomeScreen
 
