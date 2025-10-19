@@ -1,0 +1,282 @@
+[
+  {
+    "id": "1",
+    "name": "Sir Isaac Newton",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+    "course": "Classical Mechanics",
+    "msg": "\"His lectures are a force to be reckoned with—literally. Gravity finally makes sense!\"",
+    "ratings": 4.9
+  },
+  {
+    "id": "2",
+    "name": "Albert Einstein",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg",
+    "course": "Relativity and Quantum Mechanics",
+    "msg": "\"Explains the universe with elegance and simplicity. E=mc² made easy.\"",
+    "ratings": 5.0
+  },
+  {
+    "id": "3",
+    "name": "Marie Curie",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg",
+    "course": "Radiation Physics",
+    "msg": "\"Her passion for science is radioactive. Inspires generations of researchers.\"",
+    "ratings": 4.8
+  },
+  {
+    "id": "4",
+    "name": "Charles Darwin",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Charles_Darwin_seated_crop.jpg",
+    "course": "Evolutionary Biology",
+    "msg": "\"Teaches natural selection like no other. Life's diversity explained.\"",
+    "ratings": 4.7
+  },
+  {
+    "id": "5",
+    "name": "Nikola Tesla",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d4/N.Tesla.JPG",
+    "course": "Electromagnetic Engineering",
+    "msg": "\"Invents the future in every lecture. AC power made simple.\"",
+    "ratings": 4.9
+  },
+  {
+    "id": "6",
+    "name": "Ada Lovelace",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg",
+    "course": "Computational Theory",
+    "msg": "\"The first computer programmer. Her algorithms are timeless.\"",
+    "ratings": 4.8
+  },
+  {
+    "id": "7",
+    "name": "Alan Turing",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg",
+    "course": "Cryptography and Artificial Intelligence",
+    "msg": "\"Decodes the future of computing. His legacy is the foundation of modern tech.\"",
+    "ratings": 5.0
+  },
+  {
+    "id": "8",
+    "name": "Carl Jung",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/33/ETH-BIB-Jung%2C_Carl_Gustav_%281875-1961%29-Portrait-Portr_01042.tif_%28cropped%29.jpg",
+    "course": "Analytical Psychology",
+    "msg": "\"Unlocks the unconscious like a pro. Shadow work has never been more enlightening.\"",
+    "ratings": 4.7
+  },
+  {
+    "id": "9",
+    "name": "Richard Feynman",
+    "img": "https://upload.wikimedia.org/wikipedia/en/4/42/Richard_Feynman_Nobel.jpg",
+    "course": "Quantum Electrodynamics",
+    "msg": "\"Explains the universe with jokes and diagrams. Makes quantum physics fun!\"",
+    "ratings": 5.0
+  },
+  {
+    "id": "10",
+    "name": "Grace Hopper",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg",
+    "course": "Programming Languages",
+    "msg": "\"She invented debugging—and still squashes bugs faster than anyone.\"",
+    "ratings": 4.9
+  },
+  {
+    "id": "11",
+    "name": "Aristotle",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Aristotle_Altemps_Inv8575.jpg",
+    "course": "Ethics and Logic",
+    "msg": "\"Defines wisdom in every lecture. Timeless thinking, modern relevance.\"",
+    "ratings": 4.8
+  },
+  {
+    "id": "12",
+    "name": "Hypatia of Alexandria",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/43/Hypatia_portrait.png",
+    "course": "Mathematics and Philosophy",
+    "msg": "\"A pioneer of reason and numbers. Her presence is powerful and precise.\"",
+    "ratings": 4.9
+  },
+  {
+    "id": "13",
+    "name": "Pythagoras",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kapitolinischer_Pythagoras_adjusted.jpg",
+    "course": "Geometry",
+    "msg": "\"Squares things up nicely. His theorems still hold class together!\"",
+    "ratings": 4.7
+  },
+  {
+    "id": "14",
+    "name": "Emily Dickinson",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Emily_Dickinson_daguerreotype_%28cropped%29.jpg",
+    "course": "Poetry & Literature",
+    "msg": "\"Teaches literature like an emotion. Her classes are quiet but profound.\"",
+    "ratings": 4.6
+  },
+  {
+    "id": "15",
+    "name": "René Descartes",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+    "course": "Rational Philosophy",
+    "msg": "\"Makes you think you think, therefore you pass. Deep, but logical.\"",
+    "ratings": 4.8
+  },
+  {
+    "id": "16",
+    "name": "Galileo Ferraris",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/49/Galileo_Ferraris.jpg",
+    "course": "Electromechanics",
+    "msg": "\"His lectures rotate your understanding of motors. AC genius!\"",
+    "ratings": 4.7
+  },
+  {
+    "id": "17",
+    "name": "Prof. Richard Feynman",
+    "img": "https://upload.wikimedia.org/wikipedia/en/4/42/Richard_Feynman_Nobel.jpg",
+    "course": "Quantum Electrodynamics",
+    "msg": "\"Explains the universe with jokes and diagrams. Makes quantum physics fun!\"",
+    "ratings": 5.0
+  },
+  {
+    "id": "18",
+    "name": "Dr. Grace Hopper",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg",
+    "course": "Programming Languages",
+    "msg": "\"She invented debugging—and still squashes bugs faster than anyone.\"",
+    "ratings": 4.9
+  },
+  {
+    "id": "19",
+    "name": "Prof. Aristotle",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Aristotle_Altemps_Inv8575.jpg",
+    "course": "Ethics and Logic",
+    "msg": "\"Defines wisdom in every lecture. Timeless thinking, modern relevance.\"",
+    "ratings": 4.8
+  },
+  {
+    "id": "20",
+    "name": "Dr. Hypatia of Alexandria",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/43/Hypatia_portrait.png",
+    "course": "Mathematics and Philosophy",
+    "msg": "\"A pioneer of reason and numbers. Her presence is powerful and precise.\"",
+    "ratings": 4.9
+  },
+  {
+    "id": "21",
+    "name": "Prof. Pythagoras",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kapitolinischer_Pythagoras_adjusted.jpg",
+    "course": "Geometry",
+    "msg": "\"Squares things up nicely. His theorems still hold class together!\"",
+    "ratings": 4.7
+  },
+  {
+    "id": "22",
+    "name": "Dr. Emily Dickinson",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Emily_Dickinson_daguerreotype_%28cropped%29.jpg",
+    "course": "Poetry & Literature",
+    "msg": "\"Teaches literature like an emotion. Her classes are quiet but profound.\"",
+    "ratings": 4.6
+  },
+  {
+    "id": "23",
+    "name": "Prof. René Descartes",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+    "course": "Rational Philosophy",
+    "msg": "\"Makes you think you think, therefore you pass. Deep, but logical.\"",
+    "ratings": 4.8
+  },
+  {
+    "id": "24",
+    "name": "Dr. Galileo Ferraris",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/49/Galileo_Ferraris.jpg",
+    "course": "Electromechanics",
+    "msg": "\"His lectures rotate your understanding of motors. AC genius!\"",
+    "ratings": 4.7
+  },
+  {
+    "id": "25",
+    "name": "Prof. Rachel Carson",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Rachel-Carson.jpg",
+    "course": "Environmental Science",
+    "msg": "\"Makes you love nature—and fight for it. Powerful voice for the planet.\"",
+    "ratings": 4.9
+  },
+  {
+    "id": "26",
+    "name": "Dr. Neil deGrasse Tyson",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/8/82/Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg",
+    "course": "Astrophysics and Media",
+    "msg": "\"Engaging and cosmic. You'll laugh, learn, and stare into space.\"",
+    "ratings": 5.0
+  },
+  {
+    "id": "27",
+    "name": "Prof. Elon Musk",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg",
+    "course": "Innovation and Entrepreneurship",
+    "msg": "\"Always 10 years ahead. Sparks wild ideas and bold ambition.\"",
+    "ratings": 4.5
+  },
+  {
+    "id": "28",
+    "name": "Dr. Virginia Woolf",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/0/0b/George_Charles_Beresford_-_Virginia_Woolf_in_1902.jpg",
+    "course": "Modernist Literature",
+    "msg": "\"Stream of consciousness that flows with beauty and depth.\"",
+    "ratings": 4.6
+  },
+  {
+    "id": "29",
+    "name": "Prof. Socrates",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Socrates_Louvre.jpg",
+    "course": "Critical Thinking",
+    "msg": "\"Answers every question with a question. Learn by doubt, grow by reason.\"",
+    "ratings": 4.9
+  },
+  {
+    "id": "30",
+    "name": "Dr. Noam Chomsky",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Chomsky.jpg",
+    "course": "Linguistics",
+    "msg": "\"Language will never sound the same. Revolutionary insights every lecture.\"",
+    "ratings": 4.8
+  },
+  {
+    "id": "31",
+    "name": "Prof. Simone de Beauvoir",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/44/Simone_de_Beauvoir2.png",
+    "course": "Feminist Philosophy",
+    "msg": "\"Empowers minds and dismantles norms. Thought‑provoking and bold.\"",
+    "ratings": 4.7
+  },
+  {
+    "id": "32",
+    "name": "Dr. Alan Watts",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Alan_Watts.jpeg",
+    "course": "Eastern Philosophy",
+    "msg": "\"His words flow like rivers of wisdom. Deeply relaxing yet awakening.\"",
+    "ratings": 4.9
+  },
+  {
+    "id": "33",
+    "name": "Prof. Buckminster Fuller",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Buckminster_Fuller_1959.jpg",
+    "course": "Sustainable Architecture",
+    "msg": "\"Teaches design with purpose. His ideas are structurally genius.\"",
+    "ratings": 4.8
+  },
+  {
+    "id": "34",
+    "name": "Dr. Barbara McClintock",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/14/Barbara_McClintock_%281902-1992%29_shown_in_her_laboratory_in_1947.jpg",
+    "course": "Genetics",
+    "msg": "\"Jumps into genes like a pro. Her lectures are Nobel‑level clarity.\"",
+    "ratings": 4.7
+  },
+  {
+    "id": "35",
+    "name": "Prof. Isaac Asimov",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/34/Isaac.Asimov01.jpg",
+    "course": "Science Fiction & Futurism",
+    "msg": "\"Where science meets imagination. Makes futures feel present.\"",
+    "ratings": 4.9
+  }
+]

@@ -8,5 +8,6 @@ export default {
   success: '#10B981',
   textdark: '#1d1d1f',
   background: '#FDFFF5',
-  gray400: '#9CA3AF',
+  gray400: '#9CA3AF', 
+  gray: '#9d9d9dff',
 };

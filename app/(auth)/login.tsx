@@ -24,7 +24,7 @@ const LoginScreen = () => {
     setLoading(true);
  
     console.log('Sign in with:', email, password);
-    
+    router.push('/home');
     setTimeout(() => {
       setLoading(false);
 
