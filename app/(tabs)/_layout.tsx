@@ -50,7 +50,8 @@ const styles = StyleSheet.create({
   backgroundColor: Platform.OS === "ios"
   ? "rgba(28, 28, 30, 0.7)"
   : "#1C1C1E",
-  alignSelf: "center",
+  position: "absolute",
+  alignItems: "center",
   bottom: 30,
   left: "5%",
   right: "5%",
@@ -67,6 +68,6 @@ const styles = StyleSheet.create({
   shadowRadius: 20,
   elevation: 20,
   overflow: "hidden",
-
+  marginLeft: 40
   },
 });

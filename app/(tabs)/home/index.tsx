@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f5f5f5',
   },
   searchcontainer: {
-    marginTop: 10,
+    marginTop: 57,
     borderRadius: 150,
     width: 350,
     alignSelf: 'center',

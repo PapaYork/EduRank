@@ -1,7 +1,8 @@
-import { Stack } from 'expo-router';
+import { Link, Stack } from 'expo-router';
 import { MaterialIcons } from '@expo/vector-icons';
 import colors from '../../../constants/colors';
-import { View, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const Layout = () => {
   return (
@@ -15,26 +16,19 @@ const Layout = () => {
           headerTransparent: true,
           headerBlurEffect: 'regular',
           headerShadowVisible: false,
+          headerStyle: {
+          },
+
           headerRight: () => (
             <View style={styles.rightHeader}>
               <TouchableOpacity>
-                <MaterialIcons
-                  name="tune"
-                  size={27}
-                  color={colors.primary}
-                  style={{ marginLeft: 5 }}
-                />
+               <MaterialIcons name="tune" size={27} color={colors.primary}  style={{padding: -5, marginLeft: 5}}/>
               </TouchableOpacity>
               <TouchableOpacity>
-                <MaterialIcons
-                  name="notifications"
-                  size={27}
-                  color={colors.primary}
-                  style={{ marginLeft: 5 }}
-                />
+               <MaterialIcons name="notifications" size={27} color={colors.primary}  style={{padding: -5, marginLeft: 5}}/>
               </TouchableOpacity>
             </View>
-          ),
+          ),  
         }}
       />
     </Stack>
@@ -47,7 +41,8 @@ const styles = StyleSheet.create({
     gap: 17,
     alignItems: 'center',
     justifyContent: 'center',
+    height:'auto',
+    width:"auto",
   },
 });
-
 export default Layout;
