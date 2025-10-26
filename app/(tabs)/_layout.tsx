@@ -27,6 +27,7 @@ export default function TabsLayout() {
         name="reviews"
         options={{
           headerTitle: "My Reviews",
+          headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <MaterialIcons name="rate-review" size={size} color={color} />
           ),

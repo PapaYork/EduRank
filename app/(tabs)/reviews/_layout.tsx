@@ -1,12 +1,24 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { Stack } from "expo-router";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
-const _layout = () => {
+const Layout = () => {
   return (
-    <View>
-      <Text>_layout</Text>
-    </View>
-  )
-}
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Stack>
+       <Stack.Screen
+         name="index"
+         options={{
+         title: "My Reviews",
+         headerShown: true,
+         headerLargeTitle: true,
+         headerTransparent: false,
+         headerLargeTitleShadowVisible: false,
+  }}
+/>
 
-export default _layout
+    </Stack>
+    </GestureHandlerRootView>
+  );
+};
+
+export default Layout;

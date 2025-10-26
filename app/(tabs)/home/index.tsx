@@ -1,7 +1,7 @@
 import { Text, StyleSheet, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import Remarks from '../../../components/remarks'
+import RemarksScreen from '../../../components/homescreen components/remarks'
 import SearchScreen from '../../../components/searchscreen'
 
 const HomeScreen  = () => {
@@ -12,7 +12,7 @@ const HomeScreen  = () => {
           <SearchScreen />
         </View>
          <View style={styles.remarkscontainer}>
-          <Remarks />
+          <RemarksScreen />
          </View>
      </View>
   )

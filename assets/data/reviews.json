@@ -1,0 +1,110 @@
+[
+    {
+      "professor": "Dr. Jane Doe",
+      "course": "Intro to Psychology - PSYC 101",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 4,
+      "review": "Dr. Doe is an engaging professor who makes every lecture interesting. Her examples are relatable and she genuinely cares about student success.",
+      "likes": 24,
+      "date": "2025-10-10"
+    },
+    {
+      "professor": "Dr. John Smith",
+      "course": "Calculus II - MATH 241",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 3,
+      "review": "The material was challenging but fair. Dr. Smith grades consistently, though lectures can feel a bit rushed.",
+      "likes": 15,
+      "date": "2025-09-28"
+    },
+    {
+      "professor": "Dr. Alan Turing",
+      "course": "CS101 - Intro to Computer Science",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 5,
+      "review": "Fantastic instructor with a clear and logical teaching style. Projects were demanding but rewarding.",
+      "likes": 24,
+      "date": "2025-09-15"
+    },
+    {
+      "professor": "Dr. Ada Lovelace",
+      "course": "CS202 - Data Structures",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 5,
+      "review": "One of the best professors I've ever had. She connects theory with real-world applications seamlessly.",
+      "likes": 15,
+      "date": "2025-08-30"
+    },
+    {
+      "professor": "Dr. Grace Hopper",
+      "course": "CS301 - Programming Languages",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 4,
+      "review": "Challenging course but taught with passion. Dr. Hopper's feedback helped me grow as a programmer.",
+      "likes": 24,
+      "date": "2025-08-10"
+    },
+    {
+      "professor": "Dr. Katherine Johnson",
+      "course": "MATH310 - Applied Linear Algebra",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 5,
+      "review": "Dr. Johnson is brilliant. Her step-by-step explanations make even the hardest concepts understandable.",
+      "likes": 15,
+      "date": "2025-07-20"
+    },
+    {
+      "professor": "Dr. Carl Sagan",
+      "course": "ASTR101 - Intro to Astronomy",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 4,
+      "review": "Inspiring lectures and captivating visuals. Sometimes goes off-topic, but always fascinating.",
+      "likes": 24,
+      "date": "2025-06-15"
+    },
+    {
+      "professor": "Dr. Richard Feynman",
+      "course": "PHYS201 - Quantum Mechanics",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 5,
+      "review": "Mind-blowing lectures with great humor. Complex material made understandable through practical analogies.",
+      "likes": 15,
+      "date": "2025-06-01"
+    },
+    {
+      "professor": "Dr. Marie Curie",
+      "course": "CHEM101 - General Chemistry",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 3,
+      "review": "Labs were tough and grading strict, but she’s very knowledgeable. Be prepared to work hard.",
+      "likes": 24,
+      "date": "2025-05-14"
+    },
+    {
+      "professor": "Dr. Neil deGrasse Tyson",
+      "course": "SCI100 - The Cosmos and You",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 5,
+      "review": "Entertaining and insightful. Brings science to life with engaging stories and multimedia.",
+      "likes": 15,
+      "date": "2025-04-22"
+    },
+    {
+      "professor": "Dr. Rosalind Franklin",
+      "course": "BIO201 - Molecular Biology",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 4,
+      "review": "Detailed lectures with strong emphasis on research. Notes are crucial; exams are concept-heavy.",
+      "likes": 24,
+      "date": "2025-03-05"
+    },
+    {
+      "professor": "Dr. Tim Berners-Lee",
+      "course": "CS350 - Web Technologies", 
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+      "rating": 4,
+      "review": "Very current and practical material. Encourages creativity and real-world applications.",
+      "likes": 24,
+      "date": "2025-02-11"
+    }
+]

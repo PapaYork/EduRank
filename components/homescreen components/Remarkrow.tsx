@@ -1,19 +1,17 @@
 import { View, Text, StyleSheet, Image } from 'react-native'
 import React, { FC } from 'react'
-import colors from '../constants/colors'
+import colors from '../../constants/colors'
 import { Ionicons } from "@expo/vector-icons";
 
 export interface RemarkrowProps {
-  id: String
   name: string
-  remark: string
   course: string
   img: string
   msg: string
   ratings: number
 }
 
-const Remarkrow: FC<RemarkrowProps> = ({ name, remark, course, img, msg, ratings }) => {
+const Remarkrow: FC<RemarkrowProps> = ({ name, course, img, msg, ratings }) => {
   return (
      <View style={styles.cardcontainer}>
       <Image source={{ uri: img }} style={styles.image} />

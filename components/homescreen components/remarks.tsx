@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 import React from 'react';
-import remarks from '../assets/data/remarks.json';
+import remarks from '../../assets/data/remarks.json';
 import Remarkrow from './Remarkrow';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -12,7 +12,7 @@ const Remarks = () => {
       <FlatList
         data={remarks}
         keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => <Remarkrow remark={''} {...item} />}
+        renderItem={({ item }) => <Remarkrow {...item} />}
         contentContainerStyle={{ paddingBottom: 120 }} // keeps last item visible above floating tabs
         showsVerticalScrollIndicator={false}
       />
