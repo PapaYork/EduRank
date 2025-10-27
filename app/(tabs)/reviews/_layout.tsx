@@ -15,7 +15,6 @@ const Layout = () => {
          headerLargeTitleShadowVisible: false,
   }}
 />
-
     </Stack>
     </GestureHandlerRootView>
   );
