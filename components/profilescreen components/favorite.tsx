@@ -12,7 +12,7 @@ interface Professor {
   backgroundColor: string
 }
 
-const Favorite: React.FC = () => {
+const FavoriteComponent: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Favorite Professors</Text>
@@ -78,6 +78,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     width: 80,
   },
-});
+})
 
-export default Favorite
+export default FavoriteComponent

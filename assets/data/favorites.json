@@ -4,34 +4,34 @@
       "name": "Dr. Alan Turing",
       "iconName": "user-graduate",
       "iconColor": "white",
-      "backgroundColor": "#3B82F6"
+      "backgroundColor": "#9CA3AF"
     },
     {
       "id": "2",
       "name": "Dr. Ada Lovelace",
       "iconName": "user-graduate",
       "iconColor": "white",
-      "backgroundColor": "#10B981"
+      "backgroundColor": "#9CA3AF"
     },
     {
       "id": "3",
       "name": "Dr. Grace Hopper",
       "iconName": "user-graduate",
       "iconColor": "white",
-      "backgroundColor": "#F97316"
+      "backgroundColor": "#9CA3AF"
     },
     {
       "id": "4",
       "name": "Dr. Richard Feynman",
       "iconName": "user-graduate",
       "iconColor": "white",
-      "backgroundColor": "#F97316"
+      "backgroundColor": "#9CA3AF"
     },
     {
         "id": "5",
       "name": "Dr. Albert Einstein",
       "iconName": "user-graduate",
       "iconColor": "white",
-      "backgroundColor": "#F97316"
+      "backgroundColor": "#9CA3AF"
     }
 ]

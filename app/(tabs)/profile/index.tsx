@@ -1,21 +1,24 @@
 import { View, Text, ScrollView, StyleSheet } from 'react-native'
 import React from 'react'
 import UserComponent from '../../../components/profilescreen components/user'
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
-import Favorite from '../../../components/profilescreen components/favorite'
+import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
+import FavoriteComponent from '../../../components/profilescreen components/favorite'
+import SettingsComponent from '../../../components/profilescreen components/settingsmenu'
 
 
 const Profile = () => {
+  const insets = useSafeAreaInsets()
   return (
     <SafeAreaProvider>
-      <SafeAreaView>
-        <ScrollView>
+      <SafeAreaView >
+        <ScrollView 
+        showsVerticalScrollIndicator={false}
+        style={ { paddingBottom: 0, paddingLeft: insets.left, paddingRight: insets.right }}>
           <View style={styles.usercomponent}>
             <UserComponent />
           </View>
-          <View>
-            <Favorite />
-          </View>
+          <FavoriteComponent />
+          <SettingsComponent />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>

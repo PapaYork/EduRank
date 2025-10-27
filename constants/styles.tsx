@@ -157,7 +157,8 @@ export const globalStyle = StyleSheet.create({
 
   separator: {
     height: StyleSheet.hairlineWidth,
-    backgroundColor: 'gray',
-    marginLeft: 50,
+    backgroundColor: colors.gray400,
+    marginLeft: 40, 
+    marginRight: 40,
   },
 });
