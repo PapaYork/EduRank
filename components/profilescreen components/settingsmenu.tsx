@@ -137,8 +137,8 @@ const styles = StyleSheet.create({
     marginRight: 12,
   },
   menuTitle: {
-    fontSize: 16,
-    fontWeight: '600',
+    fontSize: 18,
+    fontWeight: 'bold',
     color: colors.text,
   },
 })

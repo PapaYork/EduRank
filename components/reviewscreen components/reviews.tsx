@@ -2,8 +2,6 @@ import { View, Text, StyleSheet, FlatList } from 'react-native';
 import React from 'react';
 import Reviewsrow from './Reviewsrow';
 import reviews from '../../assets/data/reviews.json';
-import colors from '../../constants/colors';
-
 
 const Reviews = () => {
   return (

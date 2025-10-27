@@ -4,13 +4,13 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function RootLayout() {
   return (
-    <SafeAreaProvider>
-      <GestureHandlerRootView style={{ flex: 1 }}>
-        <Stack>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-          <Stack.Screen name="(auth)" options={{ headerShown: false }} />
-        </Stack>
-      </GestureHandlerRootView>
-    </SafeAreaProvider>
-  );
+  <SafeAreaProvider>
+  <GestureHandlerRootView style={{ flex: 1 }}>
+  <Stack>
+  <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+<Stack.Screen name="(auth)" options={{ headerShown: false }} />
+</Stack>
+</GestureHandlerRootView>
+</SafeAreaProvider>
+);
 }
