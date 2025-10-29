@@ -3,14 +3,14 @@ import React from 'react'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import RemarksScreen from '../../../components/homescreen components/remarks'
 import SearchScreen from '../../../components/searchscreen'
+import { globalStyle } from '../../../constants/styles'
 
 const HomeScreen  = () => {
   const insets = useSafeAreaInsets()
   return (
+    
      <View style={[styles.container, { paddingTop: insets.top }]} >
-        <View style={styles.searchcontainer}>
-          <SearchScreen />
-        </View>
+        <View style={[globalStyle.separator, {margin: 20}]} />
          <View style={styles.remarkscontainer}>
           <RemarksScreen />
          </View>

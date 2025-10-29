@@ -1,10 +1,13 @@
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, Platform, Alert } from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons'
 import colors from '../../constants/colors'
 import { globalStyle } from '../../constants/styles'
 
+
+
 const SettingsComponent = () => {
+  
   return (
     <View style={styles.container}>
       <View style={styles.menuCard}>
@@ -95,6 +98,7 @@ const SettingsComponent = () => {
           </View>
           <Ionicons name="chevron-forward" size={20} color={colors.textSecondary} />
         </TouchableOpacity>
+        
       </View>
     </View>
   )
@@ -141,6 +145,31 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: colors.text,
   },
+  logoutButton: {
+    width: '92%',
+    borderRadius: 14,
+    paddingVertical: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  logoutButtonIOS: {
+    backgroundColor: 'transparent',
+  },
+  logoutButtonAndroid: {
+    backgroundColor: '#007AFF', // Android/Default button color (change as needed)
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.12,
+    shadowRadius: 10,
+    elevation: 6,
+  },
+  logoutText: {
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  logoutTextIOS: {
+    color: '#E11D48',
+  },
 })
 
-export default SettingsComponent
+export default SettingsComponent;

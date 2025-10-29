@@ -5,6 +5,7 @@ import { Ionicons, Entypo } from "@expo/vector-icons";
 import colors from "../../../constants/colors";
 import { useState } from "react";
 
+
 const Layout = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   

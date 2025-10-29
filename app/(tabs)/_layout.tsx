@@ -49,9 +49,6 @@ export default function TabsLayout() {
 
 const styles = StyleSheet.create({
   container: {
-  backgroundColor: Platform.OS === "ios"
-  ? "rgba(28, 28, 30, 0.7)"
-  : "#1C1C1E",
   position: "absolute",
   alignItems: "center",
   bottom: 30,

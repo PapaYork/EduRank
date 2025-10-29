@@ -1,20 +1,83 @@
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView, KeyboardAvoidingView, Platform, Image } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import { globalStyle } from '../../constants/styles'
-import { Link } from 'expo-router'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { useRouter } from 'expo-router'
+import { SafeAreaView } from 'react-native-safe-area-context' 
+import { useSignUp, useUser } from '@clerk/clerk-expo'
+import { Link, useRouter } from 'expo-router'
 
-const signup = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
-    confirmPassword: ""
-  })
-
+const Signup = () => {
+  const { isLoaded, signUp, setActive } = useSignUp()
   const router = useRouter()
+
+  const[firstName, setFirstName] = React.useState('')
+  const[lastName, setLastName] = React.useState('')
+  const [emailAddress, setEmailAddress] = React.useState('')
+  const [password, setPassword] = React.useState('')
+  const[confirmPassword, setConfirmPassword] = React.useState('')
+  const [pendingVerification, setPendingVerification] = React.useState(false)
+
+  // Clerk user hook
+  const { user } = useUser()
+
+  // Update user publicMetadata when the user object becomes available.
+  // Use an effect and an async function inside it (can't use await at top level).
+  useEffect(() => {
+    if (!user) return
+
+    const updateMetadata = async () => {
+      try {
+        await user.update({
+          unsafeMetadata: {
+            university: 'University of Example', // Get from form if needed
+            totalReviews: 0,
+            avgRating: 0,
+            helpfulVotes: 0,
+          }
+        })
+      } catch (err) {
+        console.error('Failed to update user metadata', err)
+      }
+    }
+
+    updateMetadata()
+  }, [user])
+
+  // Handle submission of sign-up form
+  const onSignUpPress = async () => {
+    if (!isLoaded) return
+
+    // Basic client-side validation (example)
+    if (password !== confirmPassword) {
+      console.error('Passwords do not match')
+      return
+    }
+
+    try {
+      // Start sign-up process using email and password provided
+      await signUp.create({
+        emailAddress,
+        password,
+        firstName,
+        lastName,
+      })
+
+      // Send user an email with verification code
+      await signUp.prepareEmailAddressVerification({ strategy: 'email_code' })
+
+      // Set 'pendingVerification' to true to display second form and capture OTP code
+      setPendingVerification(true)
+    } catch (err) {
+      // See https://clerk.com/docs/custom-flows/error-handling
+      console.error(JSON.stringify(err, null, 2))
+    }
+  }
+
+  // Navigate to verify screen when pendingVerification becomes true
+  useEffect(() => {
+    if (pendingVerification) {
+      router.replace('/(auth)/verify')
+    }
+  }, [pendingVerification])
 
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -45,8 +108,8 @@ const signup = () => {
                   style={styles.input}
                   placeholder="John"
                   placeholderTextColor="#A0A0A0"
-                  value={formData.firstName}
-                  onChangeText={(text) => setFormData({...formData, firstName: text})}
+                  value={firstName}
+                  onChangeText={(text) => setFirstName(text)}
                 />
               </View>
               
@@ -56,8 +119,8 @@ const signup = () => {
                   style={styles.input}
                   placeholder="Doe"
                   placeholderTextColor="#A0A0A0"
-                  value={formData.lastName}
-                  onChangeText={(text) => setFormData({...formData, lastName: text})}
+                  value={lastName}
+                  onChangeText={(text) => setLastName(text)}
                 />
               </View>
             </View>
@@ -67,8 +130,8 @@ const signup = () => {
               style={styles.input}
               placeholder="john.doe@example.com"
               placeholderTextColor="#A0A0A0"
-              value={formData.email}
-              onChangeText={(text) => setFormData({...formData, email: text})}
+              value={emailAddress}
+              onChangeText={(text) => setEmailAddress(text)}
               keyboardType="email-address"
               autoCapitalize="none"
             />
@@ -78,9 +141,9 @@ const signup = () => {
               style={styles.input}
               placeholder="Enter your password"
               placeholderTextColor="#A0A0A0"
-              value={formData.password}
-              onChangeText={(text) => setFormData({...formData, password: text})}
-              secureTextEntry
+              value={password}
+              onChangeText={(text) => setPassword(text)}
+              secureTextEntry={true}
             />
 
             <Text style={styles.label}>Confirm Password</Text>
@@ -88,15 +151,15 @@ const signup = () => {
               style={styles.input}
               placeholder="Re-enter your password"
               placeholderTextColor="#A0A0A0"
-              value={formData.confirmPassword}
-              onChangeText={(text) => setFormData({...formData, confirmPassword: text})}
-              secureTextEntry
+              value={confirmPassword}
+              onChangeText={(text) => setConfirmPassword(text)}
+              secureTextEntry={true}
             />
 
             <TouchableOpacity 
               style={[globalStyle.SignUpButtonSolid, styles.loginContainer]}
               activeOpacity={0.8}
-              onPress={() => router.push('/(tabs)/home')}
+              onPress={onSignUpPress}
             >
               <Text style={globalStyle.signUpTextSolid}>Create Account</Text>
             </TouchableOpacity>
@@ -212,4 +275,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default signup
+export default Signup

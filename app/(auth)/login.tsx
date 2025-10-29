@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   View,
   Text,
@@ -10,34 +10,52 @@ import {
   ScrollView,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useSignIn } from '@clerk/clerk-expo'
+import { useRouter } from 'expo-router'
+
 
 const LoginScreen = () => {
-  const router = useRouter();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
-  const [loading, setLoading] = useState(false);
+  
+  const { signIn, setActive, isLoaded } = useSignIn()
+  const router = useRouter()
 
-  const handleSignIn = async () => {
-    setLoading(true);
- 
-    console.log('Sign in with:', email, password);
-    router.push('/home');
-    setTimeout(() => {
-      setLoading(false);
+  const [emailAddress, setEmailAddress] = React.useState('')
+  const [password, setPassword] = React.useState('')
+  const [showPassword, setShowPassword] = React.useState(false)
+  const [loading, setLoading] = React.useState(false)
 
-    }, 1500);
-  };
-
-  const handleSignUp = () => {
-    router.push('/signup');
-  };
-
-  const handleForgotPassword = () => {
-    router.push('/forgot-password');
-  };
+  // Handle the submission of the sign-in form
+    const onSignInPress = async () => {
+      if (!isLoaded) return
+  
+      setLoading(true)
+      // Start the sign-in process using the email and password provided
+      try {
+        const signInAttempt = await signIn.create({
+          identifier: emailAddress,
+          password,
+        })
+  
+        // If sign-in process is complete, set the created session as active
+        // and redirect the user to the app home; otherwise navigate to the
+        // verification flow so the user can complete further steps.
+        if (signInAttempt.status === 'complete') {
+          await setActive({ session: signInAttempt.createdSessionId })
+          router.replace('/')
+        } else {
+          // Navigate to verification/next-step screen
+          router.push('/(auth)/verify')
+          console.error(JSON.stringify(signInAttempt, null, 2))
+        }
+      } catch (err) {
+        // See https://clerk.com/docs/guides/development/custom-flows/error-handling
+        // for more info on error handling
+        console.error(JSON.stringify(err, null, 2))
+      } finally {
+        setLoading(false)
+      }
+    }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -65,8 +83,8 @@ const LoginScreen = () => {
               style={styles.input}
               placeholder="Enter your email or username"
               placeholderTextColor="#A0A0A0"
-              value={email}
-              onChangeText={setEmail}
+              value={emailAddress}
+              onChangeText={setEmailAddress}
               keyboardType="email-address"
               autoCapitalize="none"
               autoComplete="email"
@@ -98,16 +116,16 @@ const LoginScreen = () => {
             </View>
           </View>
 
-          <TouchableOpacity
+          {/* <TouchableOpacity
             style={styles.forgotPasswordContainer}
-            onPress={handleForgotPassword}
+            onPress={Forg}
           >
             <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
 
           <TouchableOpacity
             style={[styles.signInButton, loading && styles.signInButtonDisabled]}
-            onPress={handleSignIn}
+            onPress={onSignInPress}
             disabled={loading}
             activeOpacity={0.8}
           >
@@ -118,7 +136,7 @@ const LoginScreen = () => {
 
           <View style={styles.signUpContainer}>
             <Text style={styles.signUpText}>Don't have an account? </Text>
-            <TouchableOpacity onPress={handleSignUp}>
+            <TouchableOpacity onPress={() => router.push('/(auth)/signup')}>
               <Text style={styles.signUpLink}>Sign Up</Text>
             </TouchableOpacity>
           </View>

@@ -3,9 +3,11 @@ import { MaterialIcons } from "@expo/vector-icons";
 import colors from "../../../constants/colors";
 import { View, TouchableOpacity } from "react-native";
 import { StyleSheet } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const Layout = () => {
   return (
+     <GestureHandlerRootView style={{ flex: 1 }}>
     <Stack>
       <Stack.Screen
         name="index"
@@ -15,7 +17,8 @@ const Layout = () => {
           headerLargeTitle: false,
           headerTransparent: true,
           headerBlurEffect: 'regular',
-          headerShadowVisible: false,
+          headerShadowVisible: true,
+
           headerStyle: {},
 
           headerRight: () => (
@@ -41,6 +44,7 @@ const Layout = () => {
         }}
       />
     </Stack>
+    </GestureHandlerRootView>
   );
 };
 
